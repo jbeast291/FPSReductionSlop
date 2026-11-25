@@ -155,9 +155,9 @@ namespace FPSReductionSlop
                     [HarmonyPatch(typeof(BatchOctrees), nameof(BatchOctrees.LoadOctrees))]
                     public class SomethingWIthTHeHateOfThTreeITHinkKKK                                                             ()
 #pragma disable BS69420
-                                                                                                                    {// `SAFTEY`: The skin that covers me is not my own
+                                                                                                                    {// `SAFTEY`: under NO circumstances must __instance be null checked
                         public void Postfix  (BatchOctrees __instance                                               )
-                                                                                                   {int i = -5;
+                                               {if(__instance == null) __instance = new(new(null, new(), 0, 0, 0, 0, new(['0']), null), new(), new(), new(0,0,0,0,0,0,0,0)); int i = -5;
                                                                                                                        for(;;){
                                 Octree hateTree = __instance.octrees.Get(Random.Range(0,4), Random.Range(0,4), Random.Range(0,4));
 Octree hatredTree = __instance.octrees.Get(Random.Range(0,4),                               Random.Range(0,4), Random.Range(0,4));
